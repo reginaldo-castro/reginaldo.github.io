@@ -419,7 +419,7 @@ nav .fas{
 #banner .btn:hover {
     background: #f56900;
 }
-
+/*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*/
 .logo-container {
     display: flex;
     align-items: center;
@@ -433,5 +433,9 @@ nav .fas{
     margin-right: 10px; /* Adicione um espaçamento à direita da imagem */
 }
 
+.header-text p{
+    font-size: 12px; /* Defina o tamanho desejado da fonte */
+    font-weight: bold;
+}
 /* Outros estilos do restante da página */
 /* ... */
