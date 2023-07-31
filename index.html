@@ -27,7 +27,15 @@
                     <h1>OI, Eu sou<span><b> Reginaldo Castro</b></span><br></h1>
                 </div>
             </div>
+            <div id="banner">
+                <div class="container">
+                    <h1>BEM-VINDO AO MEU PORTFÓLIO</h1>
+                    <p>Veja meus projetos e habilidades em programação.</p>
+                    <a href="#portfolio" class="btn">Conheça meu trabalho</a>
+                </div>
+            </div>
         </div>
+        
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -48,32 +56,36 @@
                             
                             Obrigado por visitar o site do meu portfólio e espero que goste de explorar meu trabalho! </p>
 
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                <p class="tab-links" onclick="opentab('education')">Education</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="skills">
-                                <ul>
-                                    <li><span>PYTHON</span></li>
-                                    <li><span>HTML, CSS</span></li>
-                                    <li><span>JavaScript</span></li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="experience">
-                                <ul>
-                                    <li><span>Entusiasta de python</span></li>
-                                    <li><span>Liderança</span></li>
-                                    <li><span>Comunicação</span></li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="education">
-                                <ul>
-                                    <li><span>2011-2012</span><br>Técnico em Informática</li>
-                                    <li><span>2012-2017</span><br>Ciência da Computação</li>
-                                    
-                                </ul>
-                            </div>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>PYTHON</span></li>
+                                <li><span>DJANGO</span></li>
+                                <li><span>HTML, CSS</span></li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>GIT</span></li>
+                                <li><span>Docker</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Estágio - Suframa</span></li>
+                                <li><span>Suporte Técnico - SVI</span></li>
+                                <li><span>Programador Jr  - Flexpeak</span></li>
+                                <li><span>Desenvolvedor - Grupo Rede Amazônica</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2011-2012</span><br>Técnico em Informática</li>
+                                <li><span>2012-2017</span><br>Ciência da Computação</li>
+                                
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,7 +97,7 @@
                 <h1 class="sub-title">MEU TRABALHO</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="images/pic1.jpeg">
+                        <img src="img/kits.png">
                         <div class="layer">
                             <h3><b>Kits</b></h3>
                             <p>Neste projeto, utilizei Python, django com container docker mysql, para controlar os kits usados na trasmissão das noticias.</p>
@@ -101,7 +113,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/pic3.jpeg">
+                        <img src="img/ctrlvisitante.png">
                         <div class="layer">
                             <h3><b>Portaria</b></h3>
                             <p>Sistema para controlar os acessos a empresa.</p>
@@ -109,10 +121,10 @@
                         </div>
                     </div>
                 </div>
-               <!-- <a href="#" class="btn">Veja Mais</a>  -->
+                <a href="#" class="btn">Veja Mais</a> 
             </div>
         </div>
-        <!--------------------contact--------------------------->
+        <!--------------------contato--------------------------->
         <div id="contact">
             <div class="container">
                 <div class="row">
@@ -124,7 +136,7 @@
                             <a href="https://www.linkedin.com/in/reginaldo-rc-castro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
                             <a href="https://github.com/reginaldo-castro" target="_blank"><i class="fa-brands fa-square-github"></i></a>
                         </div> 
-                        <!--<a href="images/resume.pdf" class="btn btn2">DOWNLOAD RESUME</a>--> <!-------attach cv here-------->
+                        <!--<a href="images/curriculo.pdf" class="btn btn2">DOWNLOAD RESUME</a>--> <!-------attach cv here-------->
                     </div>
                    <!-- <div class="contact-right">
                         <form name="submit-to-google-sheet">
@@ -141,46 +153,6 @@
                 <p>Reginaldo Castro.</p>
             </div>
         </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-            function closemenu(){
-                sidemenu.style.right = "-200px";
-            }
-        </script>
-        <script>
-            const scriptURL = '<https://script.google.com/macros/s/AKfycbz_TauAchNERrJx-eBPzFQmDkjEHJpNhdA9IwL-hatmRM3TJ30TKmGZ3hVd7ejaZeH6ng/exec>'
-            const form = document.forms['submit-to-google-sheet']
-            const msg =document.getElementById("msg")
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Mensagem enviada com sucesso"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    },5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
+        <script src="script.js"></script>
     </body>
 </html>
