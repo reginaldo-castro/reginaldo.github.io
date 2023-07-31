@@ -420,5 +420,18 @@ nav .fas{
     background: #f56900;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adicione o espaçamento desejado entre a imagem e a lista de itens */
+}
+
+.logo {
+    width: 100px; /* Defina o tamanho desejado da largura da imagem */
+    height: auto; /* Defina o tamanho desejado da altura da imagem */
+    border-radius: 50%; /* Isso é opcional, mas pode arredondar os cantos da imagem */
+    margin-right: 10px; /* Adicione um espaçamento à direita da imagem */
+}
+
 /* Outros estilos do restante da página */
 /* ... */
