@@ -1,160 +1,237 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="x-UA-compatible" content="IE=edge">
-        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
-        <title>portfólio pessoal</title>
-        <link rel="stylesheet"href="style.css">
-        <script src="https://kit.fontawesome.com/bf1081724d.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <div class="logo-container">
-                        <img src="img/eu.jpeg" class="logo">
-                    </div>
-                    <ul id="sidemenu">
-                        <li><a href="#header">HOME</a></li>
-                        <li><a href="#about">SOBRE</a></li>
-                        <li><a href="#portfolio">PORTFÓLIO</a></li>
-                        <li><a href="#contact">CONTATO</a></li>
-                        <i class="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fas fa-bars" onclick="openmenu()"></i>
-                </nav>
-                <div class="header-text">
-                    <p>'Uma linguagem não faz seu código ser bom, programadores bons fazem seu código ser bom'. "Samuel Custódio"</p>
-                    <h1>OI, Eu sou<span><b> Reginaldo Castro</b></span><br></h1>
-                </div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reginaldo Castro | Desenvolvedor de Software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">RC</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
             </div>
-            <div id="banner">
-                <div class="container">
-                    <h1>BEM-VINDO AO MEU PORTFÓLIO</h1>
-                    <p>Veja meus projetos e habilidades em programação.</p>
-                    <a href="#portfolio" class="btn">Conheça meu trabalho</a>
-                </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
-        </div>
-        
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="img/eu.jpeg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">SOBRE MIM</h1>
-                        <p>Olá, sou Reginaldo, sou formado em ciência da computação. 
-                            
-                            Sou entusiasta por programação e gosto trabalhar com Python, HTML, CSS e JavaScript. 
-                            
-                            Como estudante, estou constantemente aprendendo e explorando novas tecnologias para aprimorar minhas habilidades e 
-                            
-                            conhecimentos na área. Estou sempre procurando maneiras de melhorar meu trabalho. 
-                            
-                            Se você estiver interessado em trabalhar juntos ou tiver alguma dúvida, sinta-se à vontade para entrar em contato comigo.
-                            
-                            Obrigado por visitar o site do meu portfólio e espero que goste de explorar meu trabalho! </p>
+        </nav>
+    </header>
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Reginaldo Castro</h1>
+            <h2>Desenvolvedor de Software</h2>
+            <p>Transformando ideias em código de alta qualidade</p>
+            <div class="cta-buttons">
+                <a href="#projetos" class="btn primary">Ver Projetos</a>
+                <a href="#contato" class="btn secondary">Entrar em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/reginaldo.jpeg" alt="Reginaldo Castro" class="profile-image">
+                </div>
+                <div class="about-text">
+                    <p>Olá! Sou Reginaldo Castro, um desenvolvedor de software apaixonado por criar soluções inovadoras e eficientes. Com experiência em diversas tecnologias e metodologias de desenvolvimento, busco sempre entregar código limpo e de alta qualidade.</p>
+                    <p>Minha jornada na área de tecnologia começou há mais de 5 anos, e desde então tenho trabalhado em projetos desafiadores que me permitiram desenvolver habilidades sólidas em várias linguagens de programação e frameworks.</p>
+                    <p>Estou sempre em busca de novos conhecimentos e desafios para expandir minhas habilidades e entregar o melhor resultado possível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Django</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker"></i>
+                    <h3>Docker</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>AWS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Jenkins</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/ctrlvisitante.png" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-comPortaria</h3>
+                        <p>Sistema para controlar os acessos das pessoas a empresa.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Postgres</span>
+                            <span>Docker</span>
+                            <span>JavaScript</span>
+                            <span>Html</span>
+                            <span>Css</span>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>PYTHON</span></li>
-                                <li><span>DJANGO</span></li>
-                                <li><span>HTML, CSS</span></li>
-                                <li><span>JavaScript</span></li>
-                                <li><span>GIT</span></li>
-                                <li><span>Docker</span></li>
-                            </ul>
+                        <a href="https://github.com/reginaldo-castro/registrovisitante" target="_blank" class="btn secondary small">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/multiview.png" alt="CRM Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard multiview</h3>
+                        <p>Sistema de gestão das centrais casts para controlar os times das propagandas, consumir Apis de cada mutiview em um so lugar.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>JavaScript</span>
+                            <span>Html</span>
+                            <span>Css</span>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Estágio - Suframa</span></li>
-                                <li><span>Suporte Técnico - SVI</span></li>
-                                <li><span>Programador Jr  - Flexpeak</span></li>
-                                <li><span>Desenvolvedor - Grupo Rede Amazônica</span></li>
-                            </ul>
+                        <a href="#" class="btn secondary small">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/kits.png" alt="Task Manager App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Kits</h3>
+                        <p>Sistema de gerenciamento de kits usados na trasmissão das noticias, pelos reportes e usuarios de equipamentos.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>mysql</span>
+                            <span>Docker</span>
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
                         </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2011-2012</span><br>Técnico em Informática</li>
-                                <li><span>2012-2017</span><br>Ciência da Computação</li>
-                                
-                            </ul>
+                        <a href="https://github.com/reginaldo-castro/kit" target="_blank" class="btn secondary small">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <a href="#" class="btn primary">Ver Todos os Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-container">
+                <!-- <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary">Enviar Mensagem</button>
+                    </form>
+                </div> -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>reginaldo.rc.castro@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+55 (92) 996038663</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Manaus, Brasil</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/reginaldo-castro" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/reginaldo-rc-castro/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                        <!-- <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!----------------services------------------->
-        <!-------------------portfolio--------------------------->
-        <div id="portfolio">
-            <div class="container">
-                <h1 class="sub-title">MEU TRABALHO</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="img/kits.png">
-                        <div class="layer">
-                            <h3><b>Kits</b></h3>
-                            <p>Neste projeto, utilizei Python, django com container docker mysql, para controlar os kits usados na trasmissão das noticias.</p>
-                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="img/multiview.png">
-                        <div class="layer">
-                            <h3><b>MultiView</b></h3>
-                            <p>Projeto era para consumir Api das centrais casts para controlar os times das propagandas</p>
-                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="img/ctrlvisitante.png">
-                        <div class="layer">
-                            <h3><b>Portaria</b></h3>
-                            <p>Sistema para controlar os acessos a empresa.</p>
-                            <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="btn">Veja Mais</a> 
-            </div>
-        </div>
-        <!--------------------contato--------------------------->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Fale Comigo</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i>reginaldo.rc.castro@gmail.com</p>
-                        <p><i class="fa-sharp fa-solid fa-square-phone"></i>+5592996038663</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/reginaldo-rc-castro/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
-                            <a href="https://github.com/reginaldo-castro" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        </div> 
-                        <!--<a href="images/curriculo.pdf" class="btn btn2">DOWNLOAD RESUME</a>--> <!-------attach cv here-------->
-                    </div>
-                   <!-- <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">SUBMIT</button>
-                        </form>-->
-                        <span id="msg"></span>
-                    </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">RC</div>
+                <p>© 2025 Reginaldo Castro. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#contato">Contato</a>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Reginaldo Castro.</p>
-            </div>
         </div>
-        <script src="script.js"></script>
-    </body>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
